@@ -1,0 +1,166 @@
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #8993ad;
+}
+
+.footer-menu,
+.contacts,
+.social {
+    width: 100%;
+}
+
+.footer-menu {
+    margin-bottom: 45px;
+    font-size: 15px;
+}
+
+.footer-menu__item {
+    margin-bottom: 18px;
+}
+
+.footer-menu__item:last-child {
+    margin-bottom: 0;
+}
+
+.footer-menu__link:hover {
+    border-bottom: 1px solid #2f3eff;
+    color: #2f3eff;
+}
+
+.contacts {
+    margin-bottom: 25px;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contacts__item_phone {
+    margin-bottom: 26px;
+}
+
+.icon-phone,
+.icon-mail-alt {
+    color: #2f3eff;
+}
+
+.contacts__link {
+    margin-left: 19px;
+}
+
+.contacts__link:hover {
+    border-bottom: 1px solid #2f3eff;
+    color: #2f3eff;
+}
+
+.contact-btn {
+    width: 100%;
+    padding: 21px;
+    border: 0;
+    background-color: #2f3eff;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.contact-btn:hover {
+    background-color: #5affce;
+}
+
+.social__item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social__item:last-child {
+    margin-right: 0;
+}
+
+.social__link {
+    display: inline-block;
+    width: 35px;
+    height: 30px;
+    background-image: url("../img/social-sprite.png");
+}
+
+.social__link_vk {
+    background-position: 0 0;
+}
+
+.social__link_facebook {
+    background-position: -35px 0;
+}
+
+.social__link_twitter {
+    background-position: -70px 0;
+}
+
+.social__link_instagram {
+    background-position: -105px 0;
+}
+
+.copyright {
+    background-color: #29313c;
+    padding: 33px;
+    text-align: center;
+}
+
+.copyright__text {
+    color: white;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .links-container {
+        margin-top: 100px;
+        margin-bottom: 80px;
+    }
+
+    .footer-menu,
+    .contacts,
+    .social {
+        width: auto;
+    }
+
+    .footer-menu {
+        font-size: 18px;
+    }
+
+    .contacts__link {
+        font-weight: normal;
+        color: black;
+    }
+
+    .contacts__item_phone {
+        margin-bottom: 34px;
+    }
+
+    .contact-btn {
+        width: 250px;
+        padding: 15px;
+        border: 1px solid #2f3eff;
+        background-color: transparent;
+        color: #2f3eff;
+    }
+
+    .contact-btn:hover {
+        background-color: transparent;
+        border-color: #5affce;
+        color: #5affce;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contacts__link {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 1250px) {
+    .links-container {
+        margin-top: 80px;
+    }
+}

@@ -1,0 +1,666 @@
+/* Секция "Кто я такой" */
+
+.about-me {
+	position: relative;
+}
+
+.about-me .container {
+	padding: 0;
+}
+
+.photo {
+	width: 100%;
+    margin: 0 auto;
+    padding: 82px 0 0;
+    line-height: 0;
+    text-align: center;
+    background-color: #fbfbfb;
+	background-image: url(../img/ellipse-mobile.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+
+.photo__img {
+	height: 335px;
+	width: auto;
+	z-index: 5;
+}
+
+.about-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.name-block {
+	width: 100%;
+	padding: 15px 20px 0;
+    text-align: center;
+}
+
+.name-block__name {
+	margin: 0;
+	font-weight: 900;
+}
+
+.name-block__speciality {
+	margin-top: 10px;
+	margin-bottom: 0;
+	font-size: 16px;
+	font-weight: normal;
+	color: #8993ad;
+}
+
+.btn {
+	width: 100%;
+	padding: 19px;
+	border: 0;
+	background-color: #2f3eff;
+	color: white;
+}
+
+.btn:hover {
+	background-color: #5affce;
+}
+
+.details-btn {
+	display: inline-block;
+	margin-top: 26px;
+	text-align: center;
+}
+
+.flying-tag {
+	position: absolute;
+	font-weight: bold;
+	color: #2f3eff;
+	font-size: 16px;
+	z-index: 10;
+}
+
+.flying-tag_1 {
+	top: 10%;
+	left: 15%;
+	font-size: 1.6em;
+	transform: rotate(30deg);
+	animation: 1s ease-out 0s 1 animTag1;
+}
+
+@keyframes animTag1 {
+	0% {
+		transform: rotate(0) translate(-350px, -175px);
+	}
+}
+
+.flying-tag_2 {
+	top: 8%;
+	right: 38%;
+	font-size: 1.1em;
+	transform: rotate(-30deg);
+	animation: 1s ease-out 0s 1 animTag2;
+}
+
+@keyframes animTag2 {
+	0% {
+		transform: rotate(0) translate(250px, -375px);
+	}
+}
+
+.flying-tag_3 {
+	top: 30%;
+	left: 12%;
+	font-size: 1.8em;
+	transform: rotate(20deg);
+	animation: 1s ease-out 0s 1 animTag3;
+}
+
+@keyframes animTag3 {
+	0% {
+		transform: rotate(0) translate(-250px, 50px);
+	}
+}
+
+.flying-tag_4 {
+	top: 15%;
+	right: 12%;
+	font-size: 1em;
+	transform: rotate(30deg);
+	animation: 1s ease-out 0s 1 animTag4;
+}
+
+@keyframes animTag4 {
+	0% {
+		transform: rotate(0) translate(150px, 35px);
+	}
+}
+
+/* Секция "услуги" */
+
+.services {
+	padding: 50px 0;
+	text-align: center;
+}
+
+.services__heading {
+	margin: 0;
+	font-weight: 900;
+	margin-bottom: 45px;
+}
+
+.services__wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.services__item {
+	width: 100%;
+	margin: 0 0 55px;
+	padding: 0 20px;
+}
+
+.services__img {
+	width: 62px;
+	height: 56px;
+	margin-bottom: 20px;
+}
+
+.services__name {
+	line-height: 1.5;
+	color: #8993ad;
+}
+
+/* Секция "портфолио" */
+
+.portfolio {
+	padding: 45px 0 50px;
+	background-color: #fbfbfb;
+	text-align: center;
+}
+
+.portfolio__heading {
+	margin: 0;
+	font-weight: 900;
+}
+
+.portfolio__comment {
+	color: #8993ad;
+}
+
+.gallery__arrow {
+	display: none;
+	width: 61px;
+	height: 60px;
+	margin: 0;
+	border: 0;
+	border-radius: 50%;
+	background-color: transparent;
+	box-shadow: 0 0 20px #0002;
+	z-index: 10;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	content: none;
+}
+
+.gallery__arrow_left {
+	background-image: url('../img/arrow-left.png');
+}
+
+.gallery__arrow_right {
+	background-image: url('../img/arrow-right.png');
+}
+
+.gallery {
+	margin: 45px 0 20px;
+}
+
+.project {
+	width: 100%;
+	height: 290px;
+	text-align: center;
+}
+
+.project__img {
+	height: 250px;
+	object-fit: cover;
+}
+
+.project__name {
+	color: #8993ad;
+	margin-top: 15px;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.swiper-pagination {
+	position: static;
+	margin-top: 40px;
+}
+
+.swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	padding: 0;
+	margin-right: 12px;
+	border: 0;
+	border-radius: 50%;
+	color: #ebebeb;
+}
+
+.swiper-pagination-bullet:last-child {
+	margin-right: 0;
+}
+
+.swiper-pagination-bullet-active {
+	color: #2f3eff;
+}
+
+.swiper-pagination-bullet:hover {
+	color: #5affce;
+}
+
+.order-btn {
+	margin-top: 46px;
+}
+
+/* Секция "цены" */
+
+.prices {
+	position: relative;
+	padding-top: 22px;
+	padding-bottom: 33px;
+	background: linear-gradient(to top, #5affce, #2f3eff);
+}
+
+.prices__services {
+	color: white;
+	font-size: 28px;
+}
+
+.prices__details {
+	margin-top: 44px;
+	color: white;
+	font-size: 15px;
+}
+
+.prices-btn {
+	display: inline-block;
+}
+
+.prices .flying-tag {
+	display: none;
+	color: white;
+}
+
+.flying-tag_5 {
+	top: 10%;
+	left: 9%;
+	font-size: 1.6em;
+	transform: rotate(30deg);
+	color: white;
+}
+
+.flying-tag_6 {
+	top: 15%;
+	right: 20%;
+	font-size: 1.1em;
+	transform: rotate(-30deg);
+}
+
+.flying-tag_7 {
+	top: 70%;
+	left: 12%;
+	font-size: 1.8em;
+	transform: rotate(20deg);
+}
+
+.flying-tag_8 {
+	top: 80%;
+	right: 30%;
+	font-size: 1em;
+	transform: rotate(30deg);
+}
+
+.flying-tag_9 {
+	top: 65%;
+	right: 10%;
+	font-size: 1.1em;
+	transform: rotate(-30deg);
+}
+
+/* Всплывающая форма */
+
+.leave-contacts {
+	width: 100%;
+	padding: 20px;
+	background-color: white;
+}
+
+.leave-contacts__heading {
+	margin: 20px 0;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.leave-contacts__label {
+	display: block;
+	margin-bottom: 5px;
+	color: #8993ad;
+}
+
+.leave-contacts__input {
+	display: block;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+	/* Секция "Кто я такой" */
+	.about-me {
+		width: 100%;
+		padding: 0;
+		background-color: #fbfbfb;
+		background-image: url(../img/ellipse-tablet.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 100% 100%;
+		background-clip: content-box;
+	}
+
+	.about-me .container {
+		padding: 0 40px;
+	}
+
+	.photo {
+		width: 435px;
+		padding-top: 63px;
+		position: relative;
+		line-height: 0;
+		background-color: transparent;
+		background-image: none;
+	}
+
+	.about-container {
+		width: 100%;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	.name-block {
+		padding: 9px 0 0;
+		text-align: left;
+	}
+
+	.name-block__name {
+		font-size: 54px;
+	}
+
+	.name-block__speciality {
+		margin-top: 22px;
+		font-size: 25px;
+	}
+
+	.btn {
+		width: 320px;
+		padding: 24px;
+		font-size: 18px;
+	}
+
+	.details-btn {
+		margin-top: 46px;
+	}
+
+	.photo__img {
+		height: 630px;
+		width: auto;
+	}
+
+	.flying-tag {
+		font-size: 30px;
+	}
+
+	.flying-tag_1 {
+		top: 10%;
+		left: 25%;
+	}
+
+	.flying-tag_2 {
+		top: 20%;
+		right: 55%;
+	}
+
+	.flying-tag_3 {
+		top: 75%;
+		left: 12%;
+	}
+
+	.flying-tag_4 {
+		top: 10%;
+		right: 5%;
+	}
+	/* Секция "услуги" */
+	.services {
+		padding: 100px 0;
+	}
+
+	.services__heading {
+		font-size: 54px;
+		margin-bottom: 95px;
+	}
+
+	.services__wrap {
+		justify-content: space-evenly;
+	}
+
+	.services__item {
+		width: 320px;
+		margin-bottom: 85px;
+	}
+
+	.services__img {
+		width: 80px;
+		height: 75px;
+		margin-bottom: 25px;
+	}
+
+	.services__name {
+		font-size: 20px;
+	}
+
+	.prices-btn {
+		margin-top: 10px;
+	}
+	/* Секция "портфолио" */
+	.portfolio {
+		padding: 90px 0 101px;
+	}
+
+	.portfolio__heading {
+		font-size: 54px;
+	}
+
+	.gallery {
+		position: relative;
+		margin: 100px 0 102px;
+	}
+
+	.project {
+		width: 327px;
+		height: 308px;
+	}
+
+	.project__img {
+		height: 258px;
+	}
+
+	.project__name {
+		margin-top: 17px;
+		font-size: 18px;
+	}
+
+	.swiper-pagination-bullet {
+		width: 18px;
+		height: 18px;
+		margin-right: 26px;
+	}
+
+	.order-btn {
+		margin-top: 96px;
+	}
+	/* Секция "цены" */
+	.prices {
+		padding-top: 42px;
+		padding-bottom: 67px;
+	}
+
+	.prices__services {
+		color: white;
+		font-size: 45px;
+	}
+
+	.prices__details {
+		margin-top: 39px;
+		color: white;
+		font-size: 18px;
+	}
+
+	/* Всплывающая форма */
+
+	.leave-contacts {
+		width: 500px;
+		margin: 0 auto;
+		padding: 30px 60px;
+		background-color: white;
+	}
+
+	.leave-contacts .btn {
+		display: block;
+	}
+
+	.leave-contacts__heading,
+	.leave-contacts .btn {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.leave-contacts__heading {
+		text-align: center;
+	}
+
+
+}
+
+@media (min-width: 1024px) {
+	.project {
+		width: 455px;
+		height: 410px;
+	}
+
+	.project__img {
+		height: 360px;
+	}
+
+	.project__name {
+		font-size: 25px;
+	}
+}
+
+@media (min-width: 1250px) {
+	/* Секция "Кто я такой" */
+	.about-me {
+		background-image: url(../img/ellipse-desktop.svg);
+	}
+
+	.name-block {
+		padding-bottom: 38px;
+	}
+
+	.name-block__name {
+		font-size: 80px;
+	}
+
+	.name-block__speciality {
+		margin-top: 17px;
+	}
+
+	.btn {
+		width: 270px;
+		padding: 20px;
+	}
+
+	.photo {
+		margin-right: -85px;
+	}
+	/* Секция "услуги" */
+	.services__wrap {
+		justify-content: space-between;
+	}
+
+	.services__item {
+		width: 270px;
+		padding: 0;
+	}
+
+	.prices-btn {
+		margin-top: 10px;
+	}
+	/* Секция "портфолио" */
+	.portfolio {
+		padding-bottom: 102px;
+	}
+	.gallery {
+		position: relative;
+		margin-bottom: 95px;
+		overflow: visible;
+	}
+
+	.swiper-pagination {
+		display: none;
+	}
+
+	.gallery__arrow {
+		display: block;
+		position: absolute;
+		top: 115px;
+	}
+
+	.gallery__arrow_left {
+		left: -30px;
+	}
+
+	.gallery__arrow_right {
+		right: -30px;
+	}
+
+	.project {
+		width: 370px;
+		height: 350px;
+	}
+
+	.project__img {
+		height: 290px;
+	}
+
+	.project__name {
+		font-size: 20px;
+	}
+
+	.order-btn {
+		margin: 0;
+	}
+	/* Секция "цены" */
+	.prices-container {
+		padding-left: 150px;
+		padding-right: 150px;
+	}
+
+	.prices .flying-tag {
+		display: inline;
+	}
+
+}

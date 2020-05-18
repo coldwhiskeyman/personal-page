@@ -1,0 +1,160 @@
+.header {
+	padding-top: 25px;
+	background-color: #fbfbfb;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.show-menu-btn {
+	width: 24px;
+	height: 18px;
+	background-color: transparent;
+	background-image: url('../img/burger.png');
+	background-size: contain;
+	border: 0;
+}
+
+.menu,
+.menu-full,
+.phone-wrap {
+	display: none;
+}
+
+.menu {
+	position: absolute;
+	top: -15px;
+	left: 10px;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: #cecece;
+	z-index: 15;
+}
+
+.menu__item {
+	margin-top: 10px;
+}
+
+.menu-full__link:hover,
+.phone-full:hover {
+	border-bottom: 1px solid #2f3eff;
+	color: #2f3eff;
+}
+
+.menu__close-btn {
+	width: 16px;
+	height: 16px;
+	background-color: transparent;
+	background-image: url('../img/close.png');
+	background-size: contain;
+	border: 0;
+}
+
+.phone {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.phone-full {
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.callback-btn {
+	width: 26px;
+	height: 26px;
+	background-color: transparent;
+	background-image: url('../img/callback.png');
+	border: 0;
+}
+
+.callback-btn-full {
+	display: inline-block;
+	vertical-align: middle;
+	width: 210px;
+	margin-left: 25px;
+	padding: 13px;
+	border: 1px solid #2f3eff;
+	background-color: transparent;
+	color: #2f3eff;
+}
+
+.callback-btn-full:hover {
+	border: 1px solid #5affce;
+	color: #5affce;
+}
+
+@media (min-width: 768px) {
+	.header {
+		padding-top: 30px;
+	}
+
+	.show-menu-btn {
+		width: 45px;
+		height: 32px;
+	}
+
+	.menu {
+		top: -10px;
+		left: 30px;
+	}
+
+	.menu__close-btn {
+		width: 25px;
+		height: 25px;
+	}
+
+	.menu__item {
+		padding-top: 15px;
+		font-size: 25px;
+	}
+
+	.phone,
+	.callback-btn {
+		display: none;
+	}
+
+	.phone-wrap {
+		display: block;
+	}
+}
+
+@media (min-width: 1250px) {
+	.header {
+		padding-top: 25px;
+	}
+
+	.show-menu-btn {
+		display: none;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.menu-full {
+		display: block;
+	}
+
+	.menu-full__item {
+		display: inline-block;
+		vertical-align: middle;
+		margin-top: 0;
+		margin-right: 28px;
+		padding-bottom: 2px;
+	}
+
+	.menu-full__item:last-child {
+		margin-right: 0;
+	}
+
+	.menu-full__link {
+		padding-bottom: 2px;
+	}
+}
