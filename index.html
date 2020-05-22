@@ -75,7 +75,7 @@
 		<div class="container header-container">
 			<button class="show-menu-btn" aria-label="Показать меню"></button>
 
-			<nav class="menu">
+			<nav class="menu closed hidden">
 				<button class="menu__close-btn" aria-label="Скрыть меню"></button>
 				<ul class="menu__list">
 					<li class="menu__item"><a class="menu__link" href="#services">Услуги</a></li>
@@ -103,9 +103,10 @@
 	</header>
 
 	<main>
-		<div class="popup-container">
+		<div class="popup-container closed hidden">
 			<form class="leave-contacts">
 				<h2 class="leave-contacts__heading">Оставьте свои контакты</h2>
+				<button class="leave-contacts__close" type="button">Отменить</button>
 				<label class="leave-contacts__label" for="name">Имя</label>
 				<input class="leave-contacts__input" type="text" id="name">
 				<label class="leave-contacts__label" for="phone">Телефон</label>

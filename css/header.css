@@ -19,7 +19,6 @@
 	border: 0;
 }
 
-.menu,
 .menu-full,
 .phone-wrap {
 	display: none;
@@ -33,10 +32,16 @@
 	border-radius: 5px;
 	background-color: #cecece;
 	z-index: 15;
+	transition: 0.5s;
 }
 
 .menu__item {
 	margin-top: 10px;
+}
+
+.menu-full__link {
+	transition: 0.5s;
+	border-bottom: 1px solid transparent;
 }
 
 .menu-full__link:hover,
@@ -62,8 +67,10 @@
 .phone-full {
 	display: inline-block;
 	vertical-align: middle;
+	border-bottom: 1px solid transparent;
 	font-weight: bold;
 	font-size: 25px;
+	transition: 0.5s;
 }
 
 .callback-btn {
@@ -83,6 +90,7 @@
 	border: 1px solid #2f3eff;
 	background-color: transparent;
 	color: #2f3eff;
+	transition: 0.5s;
 }
 
 .callback-btn-full:hover {

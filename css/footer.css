@@ -27,6 +27,11 @@
     margin-bottom: 0;
 }
 
+.footer-menu__link {
+    border-bottom: 1px solid transparent;
+    transition: 0.5s;
+}
+
 .footer-menu__link:hover {
     border-bottom: 1px solid #2f3eff;
     color: #2f3eff;
@@ -50,6 +55,8 @@
 
 .contacts__link {
     margin-left: 19px;
+    border-bottom: 1px solid transparent;
+    transition: 0.5s;
 }
 
 .contacts__link:hover {
@@ -64,6 +71,7 @@
     background-color: #2f3eff;
     color: white;
     margin-bottom: 50px;
+    transition: 0.5s;
 }
 
 .contact-btn:hover {
