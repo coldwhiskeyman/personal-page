@@ -1,0 +1,249 @@
+<!-- #5affce #2f3eff -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Программист Михаил</title>
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="preload" href="fonts/roboto-v20-cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/roboto-v20-cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="fonts/roboto-v20-cyrillic-900.woff2" as="font" type="font/woff2" crossorigin>
+	<style>
+		@font-face {
+			font-family: 'Roboto';
+			src: url('fonts/roboto-v20-cyrillic-regular.woff2') format('woff2'),
+				url('fonts/roboto-v20-cyrillic-regular.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: 'Roboto';
+			src: url('fonts/roboto-v20-cyrillic-500.woff2') format('woff2'),
+				url('fonts/roboto-v20-cyrillic-500.woff') format('woff');
+			font-weight: 500;
+			font-style: normal;
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: 'Roboto';
+			src: url('fonts/roboto-v20-cyrillic-700.woff2') format('woff2'),
+				url('fonts/roboto-v20-cyrillic-700.woff') format('woff');
+			font-weight: 700;
+			font-style: normal;
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: 'Roboto';
+			src: url('fonts/roboto-v20-cyrillic-900.woff2') format('woff2'),
+				url('fonts/roboto-v20-cyrillic-900.woff') format('woff');
+			font-weight: 900;
+			font-style: normal;
+			font-display: swap;
+		}
+	</style>
+	<link rel="stylesheet" href="swiper-5.3.8/package/css/swiper.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="fonts/fontello-825e14f6/css/fontello.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container header-container">
+			<button class="show-menu-btn" aria-label="Показать меню"></button>
+
+			<nav class="menu closed hidden">
+				<button class="menu__close-btn" aria-label="Скрыть меню"></button>
+				<ul class="menu__list">
+					<li class="menu__item"><a class="menu__link" href="#services">Услуги</a></li>
+					<li class="menu__item"><a class="menu__link" href="#portfolio">Портфолио</a></li>
+					<li class="menu__item"><a class="menu__link" href="#prices">Стоимость</a></li>
+				</ul>
+			</nav>
+
+			<nav class="menu-full">
+				<ul class="menu-full__list">
+					<li class="menu-full__item"><a class="menu-full__link" href="#services">Услуги</a></li>
+					<li class="menu-full__item"><a class="menu-full__link" href="#portfolio">Портфолио</a></li>
+					<li class="menu-full__item"><a class="menu-full__link" href="#prices">Стоимость</a></li>
+				</ul>
+			</nav>
+
+			<a class="phone" href="tel:+79202936987">+7 (920) 293-69-87</a>
+			<button class="callback-btn" aria-label="Заказать звонок"></button>
+
+			<div class="phone-wrap">
+				<a class="phone-full" href="tel:+79202936987">+7 (920) 293-69-87</a>
+				<button class="callback-btn-full">Заказать звонок</button>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="popup-container closed hidden">
+			<form class="leave-contacts">
+				<h2 class="leave-contacts__heading">Оставьте свои контакты</h2>
+				<button class="leave-contacts__close" type="button">Отменить</button>
+				<label class="leave-contacts__label" for="name">Имя</label>
+				<input class="leave-contacts__input" type="text" id="name">
+				<label class="leave-contacts__label" for="phone">Телефон</label>
+				<input class="leave-contacts__input" type="tel" id="phone">
+				<label class="leave-contacts__label" for="email">Электронная почта</label>
+				<input class="leave-contacts__input" type="email" id="email">
+				<input class="btn" type="submit" value="Подтвердить">
+			</form>
+		</div>
+		<section class="about-me">
+			<span class="flying-tag flying-tag_1">{ }</span>
+			<span class="flying-tag flying-tag_2">&lt;/&gt;</span>
+			<span class="flying-tag flying-tag_3">#</span>
+			<span class="flying-tag flying-tag_4">&lt;div&gt;</span>
+			<div class="container">
+				<figure class="about-container">
+					<picture class="photo">
+						<source media="(min-width: 768px)" type="image/webp" srcset="img/my-photo-large@1x.webp 1x, img/my-photo-large@2x.webp 2x">
+						<source type="image/webp" srcset="img/my-photo-small@1x.webp 1x, img/my-photo-small@2x.webp 2x">
+						<source media="(min-width: 768px)" srcset="img/my-photo-large@1x.png 1x, img/my-photo-large@2x.png 2x">
+						<img class="photo__img" src="img/my-photo-small@1x.png" srcset="img/my-photo-small@2x.png 2x" alt="Фотография Михаила">
+					</picture>
+
+					<figcaption class="name-block">
+						<hgroup class="name-block__headings">
+							<h1 class="name-block__name">Михаил Пестов</h1>
+							<h2 class="name-block__speciality">Python-разработчик</h2>
+						</hgroup>
+						<a class="details-btn btn" href="#prices">Узнать больше</a>
+					</figcaption>
+				</figure>
+			</div>
+		</section>
+
+		<section class="services" id="services">
+			<div class="container">
+				<h2 class="services__heading">Что я делаю</h2>
+				<div class="services__wrap">
+					<figure class="services__item">
+						<img class="services__img" src="img/tools-and-utensils.svg" alt="Схематичное изображение компьютера">
+						<figcaption class="services__name">
+							Верстка лендинг-страниц и сайтов любой сложности
+						</figcaption>
+					</figure>
+					<figure class="services__item">
+						<img class="services__img" src="img/responsive.svg" alt="Несколько различных устройств">
+						<figcaption class="services__name">
+							Адаптивная вёрстка под все браузеры и устройства
+						</figcaption>
+					</figure>
+					<figure class="services__item">
+						<img class="services__img" src="img/programming.svg" alt="Символ языка программирования">
+						<figcaption class="services__name">
+							Frontend-разработка и программирование
+						</figcaption>
+					</figure>
+					<figure class="services__item">
+						<img class="services__img" src="img/coding.svg" alt="Символ тега верстки">
+						<figcaption class="services__name">
+							Исправление и доработка существующей вёрстки
+						</figcaption>
+					</figure>
+				</div>
+				<a class="prices-btn btn" href="#prices">Узнать стоимость</a>
+			</div>
+		</section>
+
+		<section class="portfolio" id="portfolio">
+			<div class="container">
+				<h2 class="portfolio__heading">Примеры моих работ</h2>
+				<p class="portfolio__comment">Да, это не программистские проекты</p>
+				<div class="gallery">
+					<button class="gallery__arrow gallery__arrow_left swiper-button-prev" type="button" aria-label="Прокрутить влево"></button>
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<figure class="project swiper-slide">
+								<a class="project__link" href="#"><img class="project__img" src="img/hampton-by-hilton.jpg" alt="Гостиница Hampton by Hilton"></a>
+								<figcaption class="project__name">Гостиница Hampton by Hilton</figcaption>
+							</figure>
+							<figure class="project swiper-slide">
+								<a class="project__link" href="#"><img class="project__img" src="img/serdce-nizhnego.jpg" alt="ЖК Сердце Нижнего"></a>
+								<figcaption class="project__name">ЖК Сердце Нижнего</figcaption>
+							</figure>
+							<figure class="project swiper-slide">
+								<a class="project__link" href="#"><img class="project__img" src="img/strelka.jpg" alt="Офисное здание на Стрелке"></a>
+								<figcaption class="project__name">Офисное здание на Стрелке (проект)</figcaption>
+							</figure>
+						</div>
+					</div>
+					<button class="gallery__arrow gallery__arrow_right swiper-button-next" type="button" aria-label="Прокрутить вправо"></button>
+				</div>
+				<div class="swiper-pagination"></div>
+				<button class="order-btn btn" type="button">Заказать проект</button>
+			</div>
+		</section>
+
+		<section class="prices" id="prices">
+			<span class="flying-tag flying-tag_5">{ }</span>
+			<span class="flying-tag flying-tag_6">&lt;/&gt;</span>
+			<span class="flying-tag flying-tag_7">#</span>
+			<span class="flying-tag flying-tag_8">&lt;div&gt;</span>
+			<span class="flying-tag flying-tag_9">{ }</span>
+			<div class="container prices-container">
+				<h2 class="prices__services">Адаптивная вёрстка под все устройства и браузеры от 1000 рублей всего за 4 часа.*</h2>
+				<p class="prices__details">Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально в зависимости от сложности задач.</p>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="links">
+			<div class="container links-container">
+				<nav class="footer-menu">
+					<ul class="footer-menu__list">
+						<li class="footer-menu__item"><a class="footer-menu__link" href="#services">Услуги</a></li>
+						<li class="footer-menu__item"><a class="footer-menu__link" href="#portfolio">Портфолио</a></li>
+						<li class="footer-menu__item"><a class="footer-menu__link" href="#prices">Стоимость</a></li>
+					</ul>
+				</nav>
+				<address class="contacts">
+					<ul class="contacts__list">
+						<li class="contacts__item contacts__item_phone"><i class="icon-phone"></i><a class="contacts__link" href="tel:+79202936987">+7 (920) 293-69-87</a></li>
+						<li class="contacts__item"><i class="icon-mail-alt"></i><a class="contacts__link" href="mailto:mikhail_pestov@inbox.ru">mikhail_pestov@inbox.ru</a></li>
+					</ul>
+				</address>
+				<div class="social">
+					<button class="contact-btn">Заказать звонок</button>
+					<ul class="social__list">
+						<li class="social__item"><a class="social__link social__link_vk" href="https://vk.com/jack_daniels1986"></a></li>
+						<li class="social__item"><a class="social__link social__link_facebook" href="#"></a></li>
+						<li class="social__item"><a class="social__link social__link_twitter" href="#"></a></li>
+						<li class="social__item"><a class="social__link social__link_instagram" href="https://www.instagram.com/coldwhiskeyman/"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<p class="copyright__text">&copy; Михаил Пестов, 2020</p>
+		</div>
+	</footer>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="swiper-5.3.8/package/js/swiper.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
