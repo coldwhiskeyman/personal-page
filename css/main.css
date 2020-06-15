@@ -381,6 +381,7 @@
 		background-size: contain;
 		background-position: 100% 100%;
 		background-clip: content-box;
+		overflow: hidden;
 	}
 
 	.about-me .container {

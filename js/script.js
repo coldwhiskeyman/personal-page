@@ -28,59 +28,80 @@ $(function () {
     },
   });
 
-  popup = $('.popup-container');
-  menu = $('.menu')
+  let popup = $('.popup-container');
+  let menu = $('.menu');
+
+  let name;
+  let phone;
+  let email;
+
+  function showModal(element) {
+    element.removeClass('closed');
+    setTimeout(function(){
+      element.removeClass('hidden');
+    }, 10);
+  }
+
+  function hideModal(element) {
+    element.addClass('hidden');
+    setTimeout(function(){
+      element.addClass('closed');
+    }, 500);
+  }
 
   $('.show-menu-btn, .menu__close-btn, .menu__link').click(function() {
     if (menu.hasClass('closed')) {
-      menu.removeClass('closed');
-      setTimeout(function(){
-        menu.removeClass('hidden');
-      }, 10);
+      showModal(menu);
     } else {
-      menu.addClass('hidden');
-      setTimeout(function(){
-        menu.addClass('closed');
-      }, 500);
+      hideModal(menu);
     }
   });
 
   $('.callback-btn, .callback-btn-full, .order-btn, .contact-btn').click(function () {
-    popup.removeClass('closed');
-    setTimeout(function(){
-      popup.removeClass('hidden');
-    }, 10);
+    showModal(popup);
   });
   popup.click(function (event) {
     if (event.target === this) {
-      $(this).addClass('hidden');
-      setTimeout(function(){
-        popup.addClass('closed');
-      }, 500);
-    };
+      hideModal(popup);
+    }
   });
-  $('.leave-contacts__close').click(function() {
+  $('.leave-contacts__close').click(function () {
+    hideModal(popup);
+  });
+
+  $('#name').on('change', function () {
+    name = $('#name').val();
+  });
+  $('#phone').on('change', function () {
+    phone = $('#phone').val();
+  });
+  $('#email').on('change', function () {
+    email = $('#email').val();
+  });
+  $('.leave-contacts').submit(function (event) {
+    event.preventDefault();
+    Email.send({
+      SecureToken: '195e378a-4f9e-42ad-8158-8485af1e67d0',
+      To : 'eldiablo5783@gmail.com',
+      From : email,
+      Subject : "Contact me",
+      Body : "Name: " + name + " Phone: " + phone
+    }).then(
+        message => alert(message)
+    );
     popup.addClass('hidden');
     setTimeout(function(){
       popup.addClass('closed');
     }, 500);
-  })
+  });
 
   $('a[href^="#"]').on('click', function(event) {
     // отменяем стандартное действие
     event.preventDefault();
     
-    var sc = $(this).attr("href"),
-        dn = $(sc).offset().top;
-    /*
-    * sc - в переменную заносим информацию о том, к какому блоку надо перейти
-    * dn - определяем положение блока на странице
-    */
+    let sc = $(this).attr("href");
+    let dn = $(sc).offset().top;
     
     $('html, body').animate({scrollTop: dn}, 500);
-    
-    /*
-    * 500 скорость перехода в миллисекундах
-    */
   });
 });
